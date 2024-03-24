@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getxapp/provider/login/login_provider.dart';
+import 'package:getxapp/provider/login/new_user_screen.dart';
 import 'package:provider/provider.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -66,6 +67,16 @@ class _LoginScreenState extends State<LoginScreen> {
                       ? const CircularProgressIndicator()
                       : const Text("Login")),
             ),
+            const SizedBox(
+              height: 40,
+            ),
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => NewUserScreen(),
+                  ));
+                },
+                child: const Text("Create User"))
           ],
         ),
       ),
