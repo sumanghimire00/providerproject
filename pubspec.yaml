@@ -38,6 +38,8 @@ dependencies:
   get: ^4.6.6
   provider: ^6.1.2
   http: ^1.2.0
+  flutter_form_builder: ^9.2.1
+  email_validator: ^2.1.17
   
 
 
